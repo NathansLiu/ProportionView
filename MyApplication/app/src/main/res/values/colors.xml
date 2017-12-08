@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#303F9F</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="gradientWhite">#dc5c64</color>
+    <color name="colorDullRed">#930611</color>
+    <color name="dullYellow">#fec42e</color>
+    <color name="themeOfRed">#c40813</color>
+    <color name="colorHuangPears">#f4b231</color>
+    <color name="colorFleshcolor">#f1e1c2</color>
+    <color name="transparent">#00000000</color>
+    <!--半透明-->
+    <color name="translucence">#e0000000</color>
+
+    <color name="color_f6">#f6f6f6</color>
+
+    <!-- 常用颜色值 -->
+    <color name="white40">#40FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="graywhite">#F5F5F5</color>
+    <color name="lightblue">#1B82D1</color>
+    <color name="devide_line">#e7e7e7</color>
+    <color name="red">#FF4200</color>
+
+    <color name="main_gray">#949494</color>
+    <color name="main_green">#40AA53</color>
+    <color name="text_blue">#2DABEE</color>
+    <color name="main_black">#4B4B4B</color>
+    <color name="actionbar_background">@color/lightblue</color>
+    <color name="window_background">#EBEBEB</color>
+
+    <color name="list_divider_color">#DADADA</color>
+
+    <color name="actionbar_item_background_normal">@color/transparent</color>
+    <color name="actionbar_item_background_pressed">@color/lightblue</color>
+
+    <color name="ui_dialog_divider">@color/list_divider_color</color>
+    <color name="ui_dialog_list_text">#5E5E5E</color>
+    <color name="text_dark">#af000000</color>
+    <color name="text_light">#3f000000</color>
+    <color name="light_gray">#1a000000</color>
+    <color name="gray99">#ff999999</color>
+    <color name="lightest_gray">#0a000000</color>
+    <color name="bg_touch">@color/lightest_gray</color>
+
+    <!-- 下拉刷新时，颜色值 -->
+    <color name="swiperefresh_color1">#ff00ddff</color>
+    <color name="swiperefresh_color2">#ffffbb33</color>
+    <color name="swiperefresh_color3">#ffff4444</color>
+    <color name="swiperefresh_color4">#ffaa66cc</color>
+
+    <color name="subscribe_item_drag_stroke">#ffd2d2d2</color>
+    <color name="subscribe_item_drag_bg">#fff5f5f5</color>
+    <color name="subscribe_item_selected_bg">#ffffffff</color>
+    <color name="subscribe_item_selected_stroke">#ffcc3131</color>
+    <color name="subscribe_item_disabled_bg">#ffefefef</color>
+    <color name="subscribe_item_disabled_stroke">#ffd9d9d9</color>
+    <color name="subscribe_item_pressed_bg">#fff9f9f9</color>
+    <color name="subscribe_item_pressed_stroke">#ffcdcdcd</color>
+    <color name="subscribe_item_normal_bg">#fff5f5f5</color>
+    <color name="subscribe_item_normal_stroke">#ffcdcdcd</color>
+
+    <color name="image_loading_bg">#ffefefef</color>
+
+    <color name="control_bar_bg">#77000000</color>
+
+    <color name="black_alpha_48">#30000000</color>
+    <color name="trans">#00000000</color>
+
+    <color name="shadow">#cc222222</color>
+
+    <color name="transparent90_white">#5E5E5E</color>
+    <!-- day -->
+    <color name="day_colorPrimary">@color/lightblue</color>
+    <color name="day_colorPrimaryDark">@color/lightblue</color>
+    <color name="day_textColor">#333333</color>
+    <color name="day_infoTextColor">#999999</color>
+    <color name="day_layout_bg_normal">#f6f6f6</color>
+    <color name="day_line_color">#e7e7e7</color>
+    <color name="day_windows_bg">#fafafa</color>
+    <color name="day_edit_color">#333333</color>
+    <color name="day_edit_hit_color">#999999</color>
+
+    <!-- night -->
+    <color name="night_colorPrimary">@color/lightblue</color>
+    <color name="night_colorPrimaryDark">@color/lightblue</color>
+    <color name="night_textColor">#333333</color>
+    <color name="night_infoTextColor">#999999</color>
+    <color name="night_layout_bg_normal">#f6f6f6</color>
+    <color name="night_windows_bg">#fafafa</color>
+    <color name="night_edit_color">#333333</color>
+    <color name="night_edit_hit_color">#999999</color>
+
+</resources>

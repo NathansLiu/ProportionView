@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--标题字体颜色-->
+        <item name="android:textColorPrimary">@color/white</item>
+        <!--标题上字体Menu颜色-->
+        <item name="actionMenuTextColor">@color/white</item>
+        <!--设置Menu颜色-->
+        <item name="android:textColor">#FF0000</item>
+        <!--设置标题字体大小-->
+        <!--<item name="android:textSize">20sp</item>-->
+    </style>
+</resources>

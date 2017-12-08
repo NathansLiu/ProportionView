@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_refresh"
+        android:orderInCategory="100"
+        android:title="刷新"
+        app:showAsAction="always"
+    />
+    <item
+        android:id="@+id/refresh"
+        android:orderInCategory="100"
+        android:title="重置"
+        android:showAsAction="always"
+    />
+
+    <!--<item-->
+        <!--android:id="@+id/menu_load"-->
+        <!--android:icon="@mipmap/navigation_refresh"-->
+        <!--android:orderInCategory="200"-->
+        <!--android:showAsAction="always"-->
+        <!--android:title="Load"/>-->
+</menu>

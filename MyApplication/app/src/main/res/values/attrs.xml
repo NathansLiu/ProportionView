@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ProportionView_">
+        //字体大小
+        <attr name="textSize_" format="integer"></attr>
+        //字体颜色
+        <attr name="textColor_" format="color"></attr>
+        //总背景色
+        <attr name="backgroundColor_" format="color"></attr>
+        //进度背景
+        <attr name="progressBackground" format="color"></attr>
+    </declare-styleable>
+</resources>
