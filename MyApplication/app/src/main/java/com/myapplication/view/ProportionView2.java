@@ -90,7 +90,7 @@ public class ProportionView2 extends View {
 
         // int startY = getHeight() / 2 - fm.descent + (fm.descent - fm.ascent)
         // / 2;
-        int startY = getHeight() / 2 - fm.descent + (fm.bottom - fm.top) / 2;
+        int startY = mHigh / 2 - fm.descent + (fm.bottom - fm.top) / 2;
         //由于计算不精细需要判断100时情况
         if(mDouble >= 100){
             viewWide = mWide;//总长度
@@ -126,13 +126,13 @@ public class ProportionView2 extends View {
         Log.d("长度", viewWide + "");
     }
 
-    @Override
-    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-        int width = onMeasureR(0, widthMeasureSpec);
-        int height = onMeasureR(1, heightMeasureSpec);
-        setMeasuredDimension(width, height);
-    }
+//    @Override
+//    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+//        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+//        int width = onMeasureR(0, widthMeasureSpec);
+//        int height = onMeasureR(1, heightMeasureSpec);
+//        setMeasuredDimension(width, height);
+//    }
     /**
      * 计算控件宽高
      *

@@ -78,7 +78,7 @@ public class ProportionView1 extends View {
         super.onDraw(canvas);
         this.canvas = canvas;
         canvas.drawColor(viewbackground2);//背景色
-            /*
+        /*
          * 控件宽度/2 - 文字宽度/2
 		 */
         float startX = getWidth() / 2 - mBound.width() / 2;
@@ -88,18 +88,17 @@ public class ProportionView1 extends View {
         // float startY = getHeight() / 2 + mBound.height() / 2;
 
         Paint.FontMetricsInt fm = mPaint3.getFontMetricsInt();
-
+        //算出中间位置 文字居中
         // int startY = getHeight() / 2 - fm.descent + (fm.descent - fm.ascent)
-        // / 2;
-        startY = getHeight() / 2 - fm.descent + (fm.bottom - fm.top) / 2;
+        startY = mHigh / 2 - fm.descent + (fm.bottom - fm.top) / 2;
         //由于计算不精细需要判断100时情况
         if (mDouble >= 100) {
             viewWide = mWide;//总长度
         } else {
             viewWide = mWide / 100 * mDouble;//总长度
         }
-        canvas.drawRect(0, 0, (float) viewWide, mHigh, mPaint4);//绘制初始进度条
-        canvas.drawRect(0, 0, initialValue, mHigh, mPaint2);//绘制初始进度条
+        canvas.drawRect(0, 0, (float) viewWide, mHigh, mPaint4);//绘制透明进度条（全长）
+        canvas.drawRect(0, 0, initialValue, mHigh, mPaint2);//绘制初始进度条（动画）
         canvas.drawText(leftString, 100, startY, mPaint3);//左边文字
         canvas.drawText( mDouble + "" + "%", mWide / 2, startY, mPaint3);//中间文字
         canvas.drawText("已选择", mWide - 100, startY, mPaint3);//右边文字
@@ -116,6 +115,7 @@ public class ProportionView1 extends View {
                 }
             }
         }, 0);
+        //更新视图
         postInvalidate();
     }
 
@@ -127,13 +127,13 @@ public class ProportionView1 extends View {
         Log.d("长度", viewWide + "");
     }
 
-    @Override
-    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-        int width = onMeasureR(0, widthMeasureSpec);
-        int height = onMeasureR(1, heightMeasureSpec);
-        setMeasuredDimension(width, height);
-    }
+//    @Override
+//    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+//        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+//        int width = onMeasureR(0, widthMeasureSpec);
+//        int height = onMeasureR(1, heightMeasureSpec);
+//        setMeasuredDimension(width, height);
+//    }
 
     /**
      * 此方法是计算字体高度 使字体居中 不然只会路径居中
